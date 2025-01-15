@@ -1,0 +1,24 @@
+.projects-section {
+  width: 90rem;
+  margin: 0 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.projects-section h2 {
+  width: 100%;
+  margin: 2rem 0;
+  margin-left: 2rem;
+  font-family: 'Georama', sans-serif;
+  font-size: larger;
+}
+
+.projects-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+

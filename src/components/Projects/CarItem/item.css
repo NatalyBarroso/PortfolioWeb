@@ -1,0 +1,31 @@
+.card-item {
+  width: 28rem;
+  height: 27rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 1rem;
+  box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
+}
+
+a {
+  text-decoration:none
+}
+
+.card-item h4 {
+  font-family: 'Inconsolata', monospace;
+}
+
+.card-item p {
+  font-family: 'Inconsolata', monospace;
+  padding: 0 2rem;
+  margin: 0;
+}
+
+.card-item img {
+  width: 100%;
+  height: 15.5rem;
+  border-radius: 2rem 2rem 0 0;
+}

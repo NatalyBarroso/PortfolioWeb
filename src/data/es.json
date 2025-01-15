@@ -1,0 +1,27 @@
+{
+  "aboutme": "Ingeniera de Software con sólidos conocimientos en desarrollo Frontend y Backend, además de una pasión por crear aplicaciones móviles innovadoras para Android e iOS. Con experiencia en desarrollo web, busco oportunidades para contribuir a equipos dinámicos en el desarrollo de aplicaciones móviles, web, soluciones Backend y servicios en la nube.\n Poseo habilidades en computación en la nube para implementar soluciones escalables y seguras, aprovechando plataformas como AWS. Además, soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsabilidad y proactividad. Me gusta aprender de los demás, mejorar continuamente y enfrentar nuevos retos tecnológicos.",
+ 
+
+  "experiences": {
+    "university": {
+      "title": "Universidad La Salle Bajío",
+      "period": "2020 - 2024",
+      "description": "Graduada de la carrera de Ingeniería de Software y Sistemas Computacionales (2020-2024) con un promedio superior a 9. Durante mis estudios, adquirí conocimientos sólidos en desarrollo web y móvil, bases de datos, metodologías de gestión de proyectos, análisis de datos e inteligencia de negocios.",
+      "icons": []
+    },
+
+    "aws": {
+      "title": "AWS Cloud Practitioner",
+      "period": "2023",
+      "description": "Completé un curso de 4 meses enfocado en computación en la nube utilizando la plataforma de Amazon Web Services (AWS). Durante este proceso, adquirí conocimientos sobre arquitectura de nube, seguridad, facturación y modelos de soporte en AWS. Al finalizar, obtuve la certificación AWS Cloud Practitioner, que valida mi capacidad para comprender los conceptos básicos de la nube y aplicar las mejores prácticas en soluciones basadas en esta tecnología.",
+      "icons": []
+    },
+
+    "nohbek": {
+      "title": "Backend Developer at Nohbek",
+      "period": "2024",
+      "description": "Realicé mi periodo de prácticas en Nohbek, una startup especializada en ofrecer servicios integrales de seguridad Blockchain, consultoría y capacitación. Durante esta experiencia, participé activamente en el desarrollo de soluciones innovadoras y adquirí conocimientos prácticos en diversas áreas técnicas.",
+      "icons": ["python", "aws"]
+    }
+  }
+}

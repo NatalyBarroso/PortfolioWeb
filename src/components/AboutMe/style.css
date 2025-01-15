@@ -1,0 +1,27 @@
+.aboutme-section {
+  background-color: rgb(36,36,36);
+  width: 50rem;
+  height: 40rem;
+  margin: 0 0 2rem 0;
+  border-radius: 1rem;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutme-section h3 {
+  color: white;
+  margin-left: 2rem;
+  font-family: 'Georama', sans-serif;
+  font-size: larger;
+}
+
+.aboutme-section .aboutme-text {
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  margin: 2rem 3rem;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
