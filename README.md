@@ -2,6 +2,8 @@
 
 This is a portfolio website built with React. It showcases various projects with descriptions and links to their respective repositories.
 
+![Image Demo](public/images/porfolio-project.png)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
