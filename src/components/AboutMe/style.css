@@ -1,27 +1,85 @@
+:root {
+  --aboutme-bg-color: rgb(36,36,36);
+  --text-color: white;
+  --heading-font: 'Georama', sans-serif;
+  --body-font: 'Inconsolata', monospace;
+  --section-padding: clamp(1rem, 3vw, 2rem);
+  --text-margin: clamp(1rem, 4vw, 3rem);
+}
+
 .aboutme-section {
-  background-color: rgb(36,36,36);
-  width: 50rem;
-  height: 40rem;
-  margin: 0 0 2rem 0;
-  border-radius: 1rem;
-  padding: 0.5rem 0;
+  background-color: var(--aboutme-bg-color);
+  width: 100%;
+  max-width: 50rem;
+  min-height: fit-content;
+  margin: 2rem 0;
+  border-radius: clamp(0.5rem, 1vw, 1rem);
+  padding: clamp(1rem, 2vw, 2rem);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  box-sizing: border-box;
 }
 
 .aboutme-section h3 {
-  color: white;
-  margin-left: 2rem;
-  font-family: 'Georama', sans-serif;
-  font-size: larger;
+  color: var(--text-color);
+  margin: 0 0 0 var(--section-padding);
+  font-family: var(--heading-font);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 .aboutme-section .aboutme-text {
-  color: white;
-  font-family: 'Inconsolata', monospace;
-  margin: 2rem 3rem;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  margin: var(--text-margin);
   text-align: justify;
-  line-height: 1.5;
-  font-size: 1.2rem;
+  line-height: 1.6;
+  font-size: clamp(1rem, 1.2vwm 1.2rem);
 }
+
+@media screen and (max-width: 768px) {
+  .aboutme-section {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+  }
+
+  .aboutme-section .aboutme-text {
+    margin: 1.5rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutme-section {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  .aboutme-section h3 {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+
+  .aboutme-section .aboutme-text {
+    margin: 1rem 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+/* @media (prefers-color-scheme: light) {
+  .aboutme-section {
+    background-color: #f0f0f0;
+  }
+
+  .aboutme-section h3,
+  .aboutme-section .aboutme-text {
+    color: var(--bg-color);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutme-section {
+    transition: none;
+  }
+} */

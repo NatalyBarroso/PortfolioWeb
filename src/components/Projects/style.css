@@ -1,5 +1,6 @@
 .projects-section {
-  width: 90rem;
+  width: 100%;
+  max-width: var(--max-width);
   margin: 0 0 2rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -10,8 +11,8 @@
   width: 100%;
   margin: 2rem 0;
   margin-left: 2rem;
-  font-family: 'Georama', sans-serif;
-  font-size: larger;
+  font-family: var(--heading-font);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 .projects-card {
@@ -20,5 +21,32 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+  .projects-section h2 {
+    margin-left: 1rem;
+  }
+
+  .projects-card {
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-section h2 {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .projects-card {
+    gap: 1rem;
+    padding: 0;
+  }
+}
+
 

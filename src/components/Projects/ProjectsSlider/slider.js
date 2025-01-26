@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import CardItem from '../CarItem/item';
 import './style.css'
 
@@ -35,13 +35,32 @@ const ChevronRightIcon = () => (
 );
 
 const ProjectsSlider = ({ projects }) => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slidesPerView, setSlidesPerView] = useState(3);
+
+  // Función para determinar cuántos slides mostrar según el ancho de la pantalla
+  const updateSlidesPerView = () => {
+    if (window.innerWidth <= 480) {
+      setSlidesPerView(1);
+    } else if (window.innerWidth <= 1024) {
+      setSlidesPerView(2);
+    } else {
+      setSlidesPerView(3);
+    }
+  };
+
+  // Efecto para actualizar slidesPerView cuando cambie el tamaño de la ventana
+  useEffect(() => {
+    updateSlidesPerView();
+    window.addEventListener('resize', updateSlidesPerView);
+    return () => window.removeEventListener('resize', updateSlidesPerView);
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => {
-      if(prevIndex + 3 < projects.length){
-        return prevIndex + 1;
+      const nextIndex = prevIndex + slidesPerView;
+      if (nextIndex < projects.length) {
+        return nextIndex;
       }
       return prevIndex;
     });
@@ -49,18 +68,16 @@ const ProjectsSlider = ({ projects }) => {
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => {
-      if(prevIndex > 0){
-        return prevIndex - 1;
+      const nextIndex = prevIndex - slidesPerView;
+      if (nextIndex >= 0) {
+        return nextIndex;
       }
       return prevIndex;
     });
   };
 
-  // Obtener los tres proyectos que se mostraran
-  const visibleProjects = projects.slice(currentIndex, currentIndex + 3);
-
-  // Calcular si los botones deben de estar habilitados
-  const canGoNext = currentIndex + 3 < projects.length;
+  // Calcular si los botones deben estar habilitados
+  const canGoNext = currentIndex + slidesPerView < projects.length;
   const canGoPrev = currentIndex > 0;
 
   return (
@@ -70,27 +87,38 @@ const ProjectsSlider = ({ projects }) => {
           onClick={prevSlide}
           className={`carousel-button carousel-button-prev ${!canGoPrev ? 'carousel-button-disabled' : ''}`}
           disabled={!canGoPrev}>
-            <ChevronLeftIcon />
-          </button>
-          <div className='carousel-wrapper'>
-            <div
-              className='carousel-slides'
-              style={{
-                transform: `translateX(-${currentIndex * (100 / 3)}%)`
-              }}>
-                {visibleProjects.map((project, index) => (
-                  <div key={index} className='carousel-slide'>
-                    <CardItem title={project.title} description={project.description} link={project.link} bg_color={project.bg_color} image_url={project.image_url} />
-                  </div>
-                ))}
-            </div>
+          <ChevronLeftIcon />
+        </button>
+        <div className='carousel-wrapper'>
+          <div
+            className='carousel-slides'
+            style={{
+              transform: `translateX(-${(currentIndex * 100) / slidesPerView}%)`
+            }}>
+            {projects.map((project, index) => (
+              <div 
+                key={index} 
+                className='carousel-slide'
+                style={{ 
+                  width: `calc((100% - ${(slidesPerView - 1) * 1}rem) / ${slidesPerView})` 
+                }}>
+                <CardItem 
+                  title={project.title} 
+                  description={project.description} 
+                  link={project.link} 
+                  bg_color={project.bg_color} 
+                  image_url={project.image_url} 
+                />
+              </div>
+            ))}
           </div>
-          <button
-            onClick={nextSlide}
-            className={`carousel-button carousel-button-next ${!canGoNext ? 'carousel-button-disabled' : ''}`}
-            disabled={!canGoNext}>
-              <ChevronRightIcon />
-            </button>
+        </div>
+        <button
+          onClick={nextSlide}
+          className={`carousel-button carousel-button-next ${!canGoNext ? 'carousel-button-disabled' : ''}`}
+          disabled={!canGoNext}>
+          <ChevronRightIcon />
+        </button>
       </div>
     </div>
   )

@@ -1,18 +1,44 @@
+:root {
+  --heading-font: 'Georama', sans-serif;
+  --body-font: 'Inconsolata', monospace;
+  --accent-color: rgb(102,102,102,1);
+  --secondary-color: rgba(36,36,36,0.1);
+  --text-color: white;
+  --max-width: 90rem;
+  --padding-x: clamp(1rem, 5vw, 2rem);
+}
+
 .App {
   text-align: center;
   background-color: rgb(255,255,255,1);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   min-height: 100vh;
   padding: 0;
-  font-family: 'Georama', sans-serif;
+  font-family: var(--heading-font);
+  width: 100%;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 .content-container {
-  padding: 0 2rem;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-x);
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    padding: 0 1rem;
+  }
 }
 
 .App .card {
   align-self: center;
+  width: 100%;
+  max-width: 90rem;
 }
+
