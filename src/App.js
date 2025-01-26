@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './styles/App.css'
 import HomeCard from './components/HomeCard/component'
 import AboutMe from './components/AboutMe/component'
