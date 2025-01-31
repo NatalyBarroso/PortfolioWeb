@@ -19,7 +19,7 @@
 }
 
 .nav_bar .nav_menu {
-  max-width: 555px;
+  max-width: 700px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -55,6 +55,23 @@
   height: 2px;
   background-color: var(--accent-color);
   transition: all var(--transition-time);
+}
+
+.nav_bar .nav_lang {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  margin: 0 2rem 0;
+}
+
+.nav_bar .nav_lang p {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.nav_bar .nav_lang p:hover {
+  color: var(--accent-color);
 }
 
 /* Hamburger menu icon */

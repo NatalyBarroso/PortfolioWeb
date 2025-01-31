@@ -1,8 +1,26 @@
 {
-  "aboutme": "Ingeniera de Software con sólidos conocimientos en desarrollo Frontend y Backend, además de una pasión por crear aplicaciones móviles innovadoras para Android e iOS. Con experiencia en desarrollo web, busco oportunidades para contribuir a equipos dinámicos en el desarrollo de aplicaciones móviles, web, soluciones Backend y servicios en la nube.\n Poseo habilidades en computación en la nube para implementar soluciones escalables y seguras, aprovechando plataformas como AWS. Además, soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsabilidad y proactividad. Me gusta aprender de los demás, mejorar continuamente y enfrentar nuevos retos tecnológicos.",
+  "navbar": {
+    "home": "INICIO",
+    "aboutMe": "SOBRE MÍ",
+    "experience": "EXPERIENCIA",
+    "projects": "PROYECTOS"
+  },
+
+  "card": {
+    "gitHubRepo": {
+      "repo1": "PROFESIONAL",
+      "repo2": "PERSONAL"
+    }
+  },
+
+  "aboutme": {
+    "title": "# SOBRE MÍ",
+    "text": "Ingeniera de Software con sólidos conocimientos en desarrollo Frontend y Backend, además de una pasión por crear aplicaciones móviles innovadoras para Android e iOS. Con experiencia en desarrollo web, busco oportunidades para contribuir a equipos dinámicos en el desarrollo de aplicaciones móviles, web, soluciones Backend y servicios en la nube.\n Poseo habilidades en computación en la nube para implementar soluciones escalables y seguras, aprovechando plataformas como AWS. Además, soy una persona empática y entusiasta, con competencias enfocadas en el trabajo en equipo, comunicación asertiva, resolución de problemas, responsabilidad y proactividad. Me gusta aprender de los demás, mejorar continuamente y enfrentar nuevos retos tecnológicos."
+  },
  
 
   "experiences": {
+    "header": "# MI EXPERIENCIA",
     "university": {
       "title": "Universidad La Salle Bajío",
       "period": "2020 - 2024",
@@ -18,10 +36,30 @@
     },
 
     "nohbek": {
-      "title": "Backend Developer at Nohbek",
+      "title": "Desarrolladora backend en Nohbek",
       "period": "2024",
       "description": "Realicé mi periodo de prácticas en Nohbek, una startup especializada en ofrecer servicios integrales de seguridad Blockchain, consultoría y capacitación. Durante esta experiencia, participé activamente en el desarrollo de soluciones innovadoras y adquirí conocimientos prácticos en diversas áreas técnicas.",
       "icons": ["python", "aws"]
+    }
+  },
+
+  "projects": {
+    "header": "#Mis proyectos",
+    "quotesWeb": {
+      "title": "Quotes Web",
+      "description": "Aplicación web que muestra una cita diaria inspirada en las frases literarias de Cassandra Clare. En el futuro, podría incluir un juego para practicar la traducción de citas a distintos idiomas."
+    },
+    "tvShowsWeb": {
+      "title": "Letterboxd pero para series de televisión",
+      "description": "Un sitio web no comercial desarrollado con Next.js que permite a los usuarios explorar reseñas de series de televisión y buscar información detallada sobre ellas. El diseño está inspirado en Letterboxd, pero el proyecto tiene fines puramente de aprendizaje y práctica del diseño web, sin intención de copiar ni competir con la plataforma original."
+    },
+    "portafolioWeb": {
+      "title": "Portfolio Web",
+      "description": "Un portafolio web interactivo desarrollado con React, diseñado para destacar mis habilidades, experiencia laboral y proyectos realizados. Este sitio ofrece una navegación intuitiva y moderna para presentar mi perfil profesional de manera atractiva y funcional."
+    },
+    "movieTracker": {
+      "title": "Movie Tracker",
+      "description": "Es una aplicación de Android desarrollada en Android Studio utilizando el lenguaje de programación Kotlin, cuyo objetivo es proporcionar a los usuarios una plataforma conveniente para realizar un seguimiento de las películas que han visto y las que planean ver."
     }
   }
 }

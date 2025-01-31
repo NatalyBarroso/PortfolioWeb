@@ -14,6 +14,7 @@ library.add(fab, fas);
 function App() {
 
   const [activeSection, setActiveSection] = React.useState('home');
+  const [language, setLanguage] = React.useState("es");
 
   const homeRef = useRef(null);
   const aboutMeRef = useRef(null);
@@ -52,19 +53,28 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar scrollToRef={scrollToRef} activeSection={activeSection} homeRef={homeRef} aboutMeRef={aboutMeRef} experienceRef={experienceRef} projectsRef={projectsRef} />
+      <NavBar 
+        scrollToRef={scrollToRef} 
+        activeSection={activeSection} 
+        homeRef={homeRef} 
+        aboutMeRef={aboutMeRef} 
+        experienceRef={experienceRef} 
+        projectsRef={projectsRef} 
+        language={language} 
+        setLanguage={setLanguage} 
+      />
       <div className='content-container'>
         <div ref={homeRef}>
-          <HomeCard />  
+          <HomeCard language={language}/>  
         </div>
         <div ref={aboutMeRef}>
-          <AboutMe />
+          <AboutMe language={language} />
         </div>
         <div ref={experienceRef}>
-         <Experience />
+         <Experience language={language}/>
         </div>
         <div ref={projectsRef}>
-          <Projects />
+          <Projects language={language}/>
         </div>
       </div>
     </div>

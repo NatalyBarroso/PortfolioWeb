@@ -1,0 +1,65 @@
+{
+  "navbar": {
+    "home": "HOME",
+    "aboutMe": "ABOUT ME",
+    "experience": "EXPERIENCE",
+    "projects": "PROJECTS"
+  },
+
+  "card": {
+    "gitHubRepo": {
+      "repo1": "PROFESSIONAL",
+      "repo2": "PERSONAL"
+    }
+  },
+
+  "aboutme": {
+    "title": "# ABOUT ME",
+    "text": "Software Engineer with strong expertise in Frontend and Backend development, as well as a passion for creating innovative mobile applications for Android and iOS. With experience in web development, I seek opportunities to contribute to dynamic teams in building mobile and web applications, Backend solutions, and cloud services.\n I have cloud computing skills to implement scalable and secure solutions, leveraging platforms like AWS. Additionally, I am an empathetic and enthusiastic individual, with strengths in teamwork, assertive communication, problem-solving, responsibility, and proactivity. I enjoy learning from others, continuously improving, and tackling new technological challenges."
+  },
+ 
+
+  "experiences": {
+    "title": "# MY EXPERIENCE",
+    "university": {
+      "title": "Universidad La Salle Bajío",
+      "period": "2020 - 2024",
+      "description": "Bachelor's degree in Software Engineering and Computer Systems (2020-2024) with an academic average of over 9 on a 10-point scale. During my studies, I developed a strong foundation in web and mobile development, databases, project management methodologies, data analysis, and business intelligence.",
+      "icons": []
+    },
+
+    "aws": {
+      "title": "AWS Cloud Practitioner",
+      "period": "2023",
+      "description": "Completed a 4-month course focused on cloud computing using the Amazon Web Services (AWS) platform. During this program, I gained knowledge in cloud architecture, security, billing, and support models within AWS. Upon completion, I earned the AWS Cloud Practitioner certification, which validates my ability to understand fundamental cloud concepts and apply best practices to cloud-based solutions.",
+      "icons": []
+    },
+
+    "nohbek": {
+      "title": "Backend Developer at Nohbek",
+      "period": "2024",
+      "description": "Completed my internship at Nohbek, a startup specializing in comprehensive Blockchain security services, consulting, and training. During this experience, I actively contributed to the development of innovative solutions and gained practical knowledge in various technical areas.",
+      "icons": ["python", "aws"]
+    }
+  },
+
+  "projects": {
+    "header": "#My Projects",
+    "quotesWeb": {
+      "title": "Quotes Web",
+      "description": "Web application that displays a daily quote inspired by the literary phrases of Cassandra Clare. In the future, it could include a game to practice translating quotes into different languages."
+    },
+    "tvShowsWeb": {
+      "title": "Letterboxd but for TV Shows",
+      "description": "A non-commercial website developed with Next.js that allows users to explore reviews of TV series and search for detailed information about them. The design is inspired by Letterboxd, but the project is purely for learning purposes and practicing web design, with no intention of copying or competing with the original platform."
+    },
+    "portafolioWeb": {
+      "title": "Portfolio Web",
+      "description": "An interactive web portfolio developed with React, designed to showcase my skills, work experience, and completed projects. This site provides an intuitive and modern navigation experience to present my professional profile in an appealing and functional way."
+    },
+    "movieTracker": {
+      "title": "Movie Tracker",
+      "description": "An Android application developed in Android Studio using the Kotlin programming language, aimed at providing users with a convenient platform to track movies they have watched and those they plan to watch"
+    }
+  }
+}
