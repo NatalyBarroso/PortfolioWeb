@@ -8,8 +8,8 @@ export default function MyProjects({ language }) {
   const texts = language === "es" ? es.projects : en.projects;
 
   const projects = [
-    { title: texts.quotesWeb.title, description: texts.quotesWeb.description, link: 'https://github.com/NatalyBarroso/QuotesWeb', bg_color: "#242424", image_url: '/images/quotes-project.png' },
-    { title: texts.tvShowsWeb.title, description: texts.tvShowsWeb.description, link: 'https://github.com/NatalyBarroso/rev-web', bg_color: "#f0efef", image_url: '/images/rev-series-project.png' },
+    { title: texts.sammysStudyGuide.title, description: texts.sammysStudyGuide.description, link: 'https://github.com/NatalyBarroso/SamyStudyGuide', bg_color: "#242424", image_url: '/images/sammysStudyGuide-project.png' },
+    { title: texts.quotesWeb.title, description: texts.quotesWeb.description, link: 'https://github.com/NatalyBarroso/QuotesWeb', bg_color: "#f0efef", image_url: '/images/quotes-project.png' },
     { title: texts.portafolioWeb.title, description: texts.portafolioWeb.description, link: 'https://github.com/NatalyBarroso/PortfolioWeb', bg_color: "#242424", image_url: '/images/porfolio-project.png' },
     { title: texts.movieTracker.title, description: texts.movieTracker.description, link: 'https://github.com/NatalyBarroso/MoviesAndroidApp', bg_color: "#f0efef", image_url: '/images/movieTracker-project.png' }
 

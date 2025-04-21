@@ -7,7 +7,7 @@ import en from '../../data/en.json'
 
 export default function Card({ language }) {
 
-  const [ active, setActive ] = useState(false);
+  const [active, setActive] = useState(false);
   const dropDownRef = useRef(null);
 
   const handleMouseenter = () => {
@@ -15,7 +15,7 @@ export default function Card({ language }) {
   }
 
   const handleMouseLeave = (event) => {
-    if(dropDownRef.current && !dropDownRef.current.contains(event.relatedTarget)) {
+    if (dropDownRef.current && !dropDownRef.current.contains(event.relatedTarget)) {
       setActive(false)
     }
   }
@@ -42,8 +42,9 @@ export default function Card({ language }) {
         <a href='https://www.linkedin.com/in/natalybarroso/'><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
         <a href='mailto:barrosonataly.dev@gmail.com'><FontAwesomeIcon icon={['fas', 'envelope']} /></a>
         <div className='cv'>
-          <a href='mailto:barrosonataly.dev@gmail.com'><FontAwesomeIcon icon={['fas', 'file']} /></a>
+          <a href='https://drive.google.com/uc?export=download&id=10NvXck_KvjdEDC_lE768N79yQB0mw7z0'><FontAwesomeIcon icon={['fas', 'file']} />
           <p>cv</p>
+          </a>
         </div>
       </div>
     </div>

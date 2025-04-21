@@ -49,9 +49,9 @@
       "title": "Quotes Web",
       "description": "Web application that displays a daily quote inspired by the literary phrases of Cassandra Clare. In the future, it could include a game to practice translating quotes into different languages."
     },
-    "tvShowsWeb": {
-      "title": "Letterboxd but for TV Shows",
-      "description": "A non-commercial website developed with Next.js that allows users to explore reviews of TV series and search for detailed information about them. The design is inspired by Letterboxd, but the project is purely for learning purposes and practicing web design, with no intention of copying or competing with the original platform."
+    "sammysStudyGuide": {
+      "title": "Samy's Study Guide",
+      "description": "'Samy's Study Guide' is an educational platform designed to help students prepare for a university entrance exam."
     },
     "portafolioWeb": {
       "title": "Portfolio Web",

@@ -24,6 +24,7 @@ export default function NavBar({ scrollToRef, activeSection, homeRef, aboutMeRef
       <button className='nav_toggle' onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label='Toggle navigation menu'>
         <FontAwesomeIcon icon={['fas', 'bars']} />
       </button>
+      <img className='nav_logo' src={process.env.PUBLIC_URL + 'images/logo.png'} alt='logo' onClick={() => handleNavClick(homeRef, 'home')} />
       <nav className={`nav_menu ${isMenuOpen ? 'active' : ''}`}>
         <a onClick={() => handleNavClick(homeRef, 'home')} className={activeSection === 'home' ? 'active' : ''} href="#home">{texts.home}</a>
         <a onClick={() => handleNavClick(aboutMeRef, 'aboutMe')} className={activeSection === 'aboutMe' ? 'active' : ''} href="#aboutMe">{texts.aboutMe}</a>

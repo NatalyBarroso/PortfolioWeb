@@ -16,7 +16,7 @@ export default function MyExperience({ language }) {
   }
 
   const currentExp = texts[selectedExp]
-  console.log(texts)
+  // console.log(texts)
 
 
   return (

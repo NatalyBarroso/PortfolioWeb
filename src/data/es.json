@@ -49,9 +49,9 @@
       "title": "Quotes Web",
       "description": "Aplicación web que muestra una cita diaria inspirada en las frases literarias de Cassandra Clare. En el futuro, podría incluir un juego para practicar la traducción de citas a distintos idiomas."
     },
-    "tvShowsWeb": {
-      "title": "Letterboxd pero para series de televisión",
-      "description": "Un sitio web no comercial desarrollado con Next.js que permite a los usuarios explorar reseñas de series de televisión y buscar información detallada sobre ellas. El diseño está inspirado en Letterboxd, pero el proyecto tiene fines puramente de aprendizaje y práctica del diseño web, sin intención de copiar ni competir con la plataforma original."
+    "sammysStudyGuide": {
+      "title": "Sammy's Study Guide",
+      "description": "'Samy's Study Guide' es una plataforma educativa diseñada para ayudar a los estudiantes a prepararse para un examen de conocimientos generales de admisión universitaria."
     },
     "portafolioWeb": {
       "title": "Portfolio Web",

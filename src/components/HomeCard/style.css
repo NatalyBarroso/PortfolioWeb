@@ -99,6 +99,7 @@
 
 .icons .cv {
   position: relative;
+  cursor: pointer;
 }
 
 .icons .cv p {
