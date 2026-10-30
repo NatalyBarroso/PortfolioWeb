@@ -93,14 +93,16 @@ const ProjectsSlider = ({ projects }) => {
           <div
             className='carousel-slides'
             style={{
-              transform: `translateX(-${(currentIndex * 100) / slidesPerView}%)`
+              // Cada paso es un slide más el gap. Un porcentaje del track
+              // ignora el gap y desplaza la página un --carousel-gap por vista.
+              transform: `translateX(calc(-${currentIndex} * (100% + var(--carousel-gap)) / ${slidesPerView}))`
             }}>
             {projects.map((project, index) => (
               <div 
                 key={index} 
                 className='carousel-slide'
                 style={{ 
-                  width: `calc((100% - ${(slidesPerView - 1) * 1}rem) / ${slidesPerView})` 
+                  width: `calc((100% - ${slidesPerView - 1} * var(--carousel-gap)) / ${slidesPerView})` 
                 }}>
                 <CardItem 
                   title={project.title} 
